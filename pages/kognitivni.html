@@ -46,7 +46,7 @@
     p strong{ color:var(--text); }
 
     h3{
-      margin:18px 0 10px;
+      margin:22px 0 10px;
       font-size:18px;
       font-weight:800;
       color:var(--text);
@@ -69,7 +69,7 @@
       border-left:6px solid var(--blue);
       border-radius:10px;
       padding:14px 16px 14px 18px;
-      margin:14px 0 16px;
+      margin:16px 0 18px;
     }
     .info-box strong{
       display:block;
@@ -82,7 +82,7 @@
       display:grid;
       grid-template-columns:repeat(2, minmax(0, 1fr));
       gap:14px;
-      margin: 10px 0 16px;
+      margin:12px 0 18px;
     }
     @media (max-width: 900px){
       .grid{ grid-template-columns:1fr; }
@@ -113,18 +113,11 @@
       border:1px dashed #c7d2fe;
       background:#f8fafc;
       border-radius:12px;
-      padding:12px 14px;
-      margin: 10px 0 0;
+      padding:14px 16px;
+      margin:14px 0 18px;
       color:var(--muted);
       font-size:15.5px;
       line-height:1.65;
-    }
-    .callout strong{ color:var(--text); }
-
-    .mini{
-      font-size:14.5px;
-      color:var(--muted);
-      margin-top:8px;
     }
 
     .pill{
@@ -137,6 +130,12 @@
       background:#eef2ff;
       color:#3730a3;
     }
+
+    .mini{
+      font-size:14.5px;
+      color:var(--muted);
+      margin-top:10px;
+    }
   </style>
 </head>
 
@@ -145,135 +144,185 @@
   <hr>
 
   <p>
-    <strong>Kognitivní transformace</strong> popisuje, co se děje „v hlavě žáka“ při učení:
-    jak si vytváří <strong>mentální modely</strong>, jak propojuje nové poznatky s těmi dřívějšími
-    a jak se mění jeho porozumění v čase. Jinými slovy: nejde jen o to, co učitel učí,
-    ale <strong>jak tomu žák skutečně porozumí</strong>.
+    <strong>Kognitivní transformace obsahu</strong> se zaměřuje na to,
+    <strong>jak se učivo mění v porozumění žáka</strong>.
+    Sleduje procesy, které probíhají „v hlavě žáka“: tvorbu mentálních modelů,
+    jejich úpravy, přestavby a propojování s předchozími znalostmi.
   </p>
 
   <div>
     <span class="tag">mentální modely</span>
-    <span class="tag">miskoncepce</span>
-    <span class="tag">scaffolding</span>
-    <span class="tag">učení z chyb</span>
+    <span class="tag">porozumění</span>
+    <span class="tag">transfer</span>
+    <span class="tag">metakognice</span>
   </div>
 
   <div class="info-box">
-    <strong>Klíčová otázka kognitivní transformace:</strong>
+    <strong>Zásadní otázka kognitivní transformace:</strong>
     <p style="margin:0;">
-      „Jaké <strong>vnitřní porozumění</strong> si z výuky žák odnese? Jaké si vytvoří
-      mentální modely – a nejsou některé z nich chybné?“
+      „Co si žák z výuky <strong>skutečně odnese</strong> a jak s tím dokáže pracovat
+      v nové situaci?“
     </p>
   </div>
 
-  <h3>Mentální modely v informatice (proč jsou důležité)</h3>
+  <h3>Mentální modely jako základ porozumění</h3>
   <p>
-    Informatika je plná abstraktních pojmů (algoritmus, proměnná, síť, data, systém).
-    Žák si k nim postupně vytváří mentální model – „představu, jak to funguje“. Pokud je model
-    neúplný nebo chybný, žák může zvládnout postup „nazpaměť“, ale <strong>nepřenese</strong>
-    znalost do nové situace.
+    Mentální model je vnitřní představa o tom, jak něco funguje.
+    V informatice jsou mentální modely klíčové, protože pracuje s abstraktními
+    a nepozorovatelnými jevy (algoritmus, proměnná, síť, data).
   </p>
 
   <div class="grid">
     <div class="card">
-      <h4>Příklady žádoucích mentálních modelů</h4>
+      <h4>Funkční mentální model</h4>
       <ul>
-        <li><strong>Algoritmus</strong> = postup (vstup → kroky → výstup), který lze ověřit.</li>
-        <li><strong>Program</strong> = přesný zápis instrukcí pro stroj (ne „kouzlo“).</li>
-        <li><strong>Chyba</strong> = informace (vodítko), ne selhání.</li>
-        <li><strong>Síť</strong> = propojené uzly a služby (ne „jedno místo internet“).</li>
+        <li>umožňuje vysvětlit jev vlastními slovy,</li>
+        <li>je použitelný v nové úloze,</li>
+        <li>vede k porozumění, ne jen k napodobení.</li>
       </ul>
     </div>
 
     <div class="card">
-      <h4>Příklady typických miskoncepcí</h4>
+      <h4>Nefunkční mentální model</h4>
       <ul>
-        <li>„Když to funguje, tak tomu rozumím.“ (záměna výsledku za porozumění)</li>
-        <li>„Kód se vykoná celý najednou.“ (nepochopení toku programu)</li>
-        <li>„Proměnná je vždy číslo.“ (nepochopení typů a reprezentace)</li>
-        <li>„Wi-Fi = internet.“ (nepochopení vrstvy připojení vs. služby)</li>
+        <li>vede k mechanickému postupu,</li>
+        <li>selhává při změně podmínek,</li>
+        <li>často vzniká z nepřesných analogií.</li>
       </ul>
     </div>
   </div>
 
-  <h3>Scaffolding: postupné opory při učení</h3>
+  <h3>Od aktivity k porozumění</h3>
   <p>
-    U kognitivní transformace je klíčové žáka „podržet“ v okamžiku, kdy je úloha na hraně jeho možností.
-    To se často řeší pomocí <strong>scaffoldingu</strong> (postupných opor), které se časem odebírají:
-    od konkrétní ukázky až po samostatné řešení.
+    V informatice je snadné zaměnit <strong>aktivitu</strong> za <strong>porozumění</strong>.
+    Žák může „něco vytvořit“, aniž by rozuměl principu.
+    Kognitivní transformace se odehrává teprve tehdy,
+    když si žák dokáže vytvořit smysluplný mentální model.
   </p>
 
   <div class="info-box">
-    <strong>Praktické opory (scaffolding) v informatice:</strong>
+    <strong>Varování:</strong>
+    <p style="margin:0;">
+      Aktivní práce (klikání, skládání bloků) je důležitá,
+      ale sama o sobě nezaručuje porozumění.
+    </p>
+  </div>
+
+  <h3>Scaffolding: řízená podpora porozumění</h3>
+  <p>
+    Kognitivní transformace je podporována pomocí
+    <strong>scaffoldingu</strong> – dočasných opor,
+    které učitel postupně odebírá, jak žák získává jistotu.
+  </p>
+
+  <div class="info-box">
+    <strong>Příklady scaffoldingu v informatice:</strong>
     <ul>
-      <li>model (obrázek, diagram, blokové schéma, simulace),</li>
-      <li>částečně hotový kód / šablona (doplnit chybějící část),</li>
-      <li>kontrolní otázky („Co je vstup? Jaký má být výstup?“),</li>
-      <li>rubrika hodnocení (co je správné řešení, co se hodnotí).</li>
+      <li>modelové příklady a vizualizace,</li>
+      <li>částečně hotové řešení,</li>
+      <li>řízené otázky („Co je vstup? Co se změní?“),</li>
+      <li>postupné zvyšování náročnosti úloh.</li>
     </ul>
   </div>
 
-  <h3>Učení z chyb: debug jako součást myšlení</h3>
+  <h3>Učení z chyb a debugování</h3>
   <p>
-    V informatice je chyba přirozená. Kognitivně je důležité, aby žák pochopil, že hledání chyby
-    (<strong>debugování</strong>) je normální proces. Když se z chyby stane „neúspěch“, žák se začne
-    vyhýbat náročnějším úlohám a kognitivní transformace se zpomalí.
+    Chyba má v informatice zásadní kognitivní význam.
+    Pokud je chyba vnímána jako selhání, učení se blokuje.
+    Pokud je chápána jako informace, podporuje hlubší porozumění.
   </p>
 
   <div class="callout">
-    <strong>Didaktický trik:</strong><br>
-    Nechej žáky dostat „záměrně chybný“ program a dej jim roli detektivů.
-    Tím se chyba přepne z „selhání“ na „úkol“ a podporuje se zdravý mentální model:
-    <strong>programátor = člověk, který postupně ladí</strong>.
+    <strong>Debugování jako kognitivní strategie:</strong><br>
+    Žák analyzuje, proč řešení nefunguje, mění mentální model
+    a ověřuje novou hypotézu.
   </div>
 
-  <h3>Ukázkový příklad: proměnná ve Scratch / blokovém prostředí</h3>
+  <h3>Transfer: přenos poznatků do nové situace</h3>
   <p>
-    Odborně je proměnná abstraktní pojem. Kognitivní transformace řeší, jak žák proměnnou pochopí,
-    aby ji uměl použít i jinde (např. v Pythonu).
+    Skutečná kognitivní transformace se projeví schopností
+    <strong>transferu</strong> – žák dokáže použít princip
+    v jiné úloze, nástroji nebo kontextu.
   </p>
 
   <div class="grid">
     <div class="card">
-      <h4>Krokování porozumění (mentální model)</h4>
-      <ol>
-        <li><strong>Konkrétní zkušenost:</strong> „mám krabičku s číslem“ (skóre ve hře).</li>
-        <li><strong>Akce:</strong> číslo se mění (přičti 1 při zásahu).</li>
-        <li><strong>Kontrola:</strong> zobraz hodnotu (na obrazovce).</li>
-        <li><strong>Přenos:</strong> podobně funguje počítadlo, časovač, životy.</li>
-        <li><strong>Abstrakce:</strong> proměnná = pojmenované místo pro data.</li>
-      </ol>
+      <h4>Povrchový přenos</h4>
+      <ul>
+        <li>podobná úloha, stejný postup,</li>
+        <li>malá změna kontextu.</li>
+      </ul>
     </div>
 
     <div class="card">
-      <h4>Diferenciace</h4>
-      <p style="margin:0 0 8px;">
-        <span class="pill">SVP</span>
-        <span class="pill">Nadaní</span>
-      </p>
+      <h4>Hluboký přenos</h4>
       <ul>
-        <li><strong>SVP:</strong> více názornosti (zobrazování hodnot), kratší úlohy, práce po krocích,
-          kartičky „vstup–proces–výstup“, více času.</li>
-        <li><strong>Nadaní:</strong> více proměnných, podmínky (if), vlastní mechanika hry, porovnání se seznamem (list),
-          propojení s textovým kódem.</li>
+        <li>jiný kontext, stejný princip,</li>
+        <li>vyžaduje pochopení podstaty jevu.</li>
+      </ul>
+    </div>
+  </div>
+
+  <h3>Metakognice: uvědomění vlastního učení</h3>
+  <p>
+    Metakognice znamená, že si žák uvědomuje,
+    <strong>jak se učí</strong>, co mu pomáhá a kde dělá chyby.
+    V informatice je metakognice silně spojena s laděním řešení
+    a plánováním postupu.
+  </p>
+
+  <div class="info-box">
+    <strong>Metakognitivní otázky pro žáky:</strong>
+    <ul>
+      <li>Co jsem si myslel, že bude fungovat – a proč?</li>
+      <li>Co jsem změnil, když to nefungovalo?</li>
+      <li>Jak bych postup vysvětlil spolužákovi?</li>
+    </ul>
+  </div>
+
+  <h3>Diferenciace z hlediska kognitivní náročnosti</h3>
+  <p>
+    Kognitivní transformace probíhá u každého žáka jiným tempem.
+    Diferenciace proto nespočívá jen v rozsahu učiva,
+    ale i v <strong>náročnosti myšlení</strong>.
+  </p>
+
+  <div class="grid">
+    <div class="card">
+      <h4>Žáci se SVP</h4>
+      <ul>
+        <li>menší kognitivní zátěž,</li>
+        <li>jasné kroky a opory,</li>
+        <li>časté ověřování porozumění.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h4>Nadaní žáci</h4>
+      <ul>
+        <li>komplexnější úlohy,</li>
+        <li>hledání více řešení,</li>
+        <li>reflexe strategie a optimalizace.</li>
       </ul>
     </div>
   </div>
 
   <h3>Jak poznat, že kognitivní transformace proběhla</h3>
   <div class="info-box">
-    <strong>Signály porozumění:</strong>
+    <strong>Indikátory porozumění:</strong>
     <ul>
-      <li>žák umí vysvětlit „proč to funguje“ vlastními slovy,</li>
-      <li>přenese dovednost do nové úlohy (transfer),</li>
-      <li>umí najít chybu a popsat strategii řešení,</li>
-      <li>neopírá se jen o napodobení, ale o princip.</li>
+      <li>žák dokáže vysvětlit princip vlastními slovy,</li>
+      <li>použije poznatek v nové situaci,</li>
+      <li>dokáže analyzovat chybu a navrhnout úpravu,</li>
+      <li>neopírá se jen o napodobení postupu.</li>
     </ul>
   </div>
 
   <p class="mini" style="margin-top:14px;">
-    Poznámka: Kognitivní transformace úzce navazuje na psycho-didaktickou (přizpůsobení žákům) a zároveň
-    se projevuje v tom, jak volíme úlohy, zpětnou vazbu a hodnocení.
+    Poznámka: Kognitivní transformace je výslednicí
+    <strong>onto-didaktické</strong> (co se učí)
+    a <strong>psycho-didaktické</strong> (jak se učí)
+    transformace a je klíčová pro skutečné porozumění informatiky.
   </p>
 </body>
 </html>

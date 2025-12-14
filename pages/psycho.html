@@ -46,7 +46,7 @@
     p strong{ color:var(--text); }
 
     h3{
-      margin:18px 0 10px;
+      margin:22px 0 10px;
       font-size:18px;
       font-weight:800;
       color:var(--text);
@@ -69,7 +69,7 @@
       border-left:6px solid var(--blue);
       border-radius:10px;
       padding:14px 16px 14px 18px;
-      margin:14px 0 16px;
+      margin:16px 0 18px;
     }
     .info-box strong{
       display:block;
@@ -82,7 +82,7 @@
       display:grid;
       grid-template-columns:repeat(2, minmax(0, 1fr));
       gap:14px;
-      margin: 10px 0 16px;
+      margin:12px 0 18px;
     }
     @media (max-width: 900px){
       .grid{ grid-template-columns:1fr; }
@@ -113,28 +113,11 @@
       border:1px dashed #c7d2fe;
       background:#f8fafc;
       border-radius:12px;
-      padding:12px 14px;
-      margin: 10px 0 0;
+      padding:14px 16px;
+      margin:14px 0 18px;
       color:var(--muted);
       font-size:15.5px;
       line-height:1.65;
-    }
-    .callout strong{ color:var(--text); }
-
-    .mini{
-      font-size:14.5px;
-      color:var(--muted);
-      margin-top:8px;
-    }
-
-    .twoCol{
-      display:grid;
-      grid-template-columns: 1fr 1fr;
-      gap:14px;
-      margin-top: 10px;
-    }
-    @media (max-width: 900px){
-      .twoCol{ grid-template-columns:1fr; }
     }
 
     .pill{
@@ -147,6 +130,12 @@
       background:#eef2ff;
       color:#3730a3;
     }
+
+    .mini{
+      font-size:14.5px;
+      color:var(--muted);
+      margin-top:10px;
+    }
   </style>
 </head>
 
@@ -155,118 +144,146 @@
   <hr>
 
   <p>
-    <strong>Psycho-didaktická transformace</strong> znamená, že učitel přizpůsobuje vybraný obsah (z kurikula)
-    tomu, <strong>jak se žáci učí</strong> a co je pro ně zvládnutelné. Zohledňuje věk, předchozí zkušenost,
-    motivaci, tempo, jazykové dovednosti, ale také <strong>žáky se speciálními vzdělávacími potřebami (SVP)</strong>
-    a <strong>žáky nadané</strong>.
+    <strong>Psycho-didaktická transformace</strong> se zaměřuje na vztah
+    <strong>učivo × žák</strong>. Řeší, jak je kurikulární obsah (vybraný v rámci
+    onto-didaktické transformace) <strong>interpretován učitelem</strong>
+    a přizpůsoben konkrétním žákům, jejich schopnostem, potřebám a způsobům učení.
   </p>
 
   <div>
-    <span class="tag">obsah × žák</span>
-    <span class="tag">diferenciace</span>
+    <span class="tag">učivo × žák</span>
+    <span class="tag">interpretace učiva</span>
     <span class="tag">PCK</span>
+    <span class="tag">diferenciace</span>
   </div>
 
   <div class="info-box">
-    <strong>Klíčová otázka psycho-didaktické transformace:</strong>
+    <strong>Základní otázka psycho-didaktické transformace:</strong>
     <p style="margin:0;">
-      „<strong>Jak</strong> mám stejné učivo podat <strong>konkrétní skupině žáků</strong>,
-      aby mu porozuměli a aby mělo vzdělávací smysl?“
+      „Jak mám <strong>stejný obsah</strong> učit tak, aby mu porozuměli
+      <strong>konkrétní žáci</strong> v konkrétní třídě?“
     </p>
   </div>
 
   <h3>Didaktická znalost obsahu (PCK)</h3>
   <p>
-    Psycho-didaktická transformace stojí na tzv. <strong>didaktické znalosti obsahu</strong>
-    (<em>Pedagogical Content Knowledge – PCK</em>): učitel propojuje
-    <strong>znalost učiva</strong> s <strong>znalostí žáků</strong> a volí vhodné způsoby výkladu,
-    příklady, analogie, úlohy a hodnocení.
+    Klíčovým pojmem psycho-didaktické transformace je
+    <strong>didaktická znalost obsahu</strong>
+    (<em>Pedagogical Content Knowledge – PCK</em>).
+    Nejde jen o znalost učiva nebo pedagogiky, ale o jejich
+    <strong>propojení</strong>.
   </p>
 
   <div class="grid">
     <div class="card">
-      <h4>Co učitel musí umět (příklady PCK)</h4>
+      <h4>Co zahrnuje PCK učitele informatiky</h4>
       <ul>
-        <li>vybrat <strong>nejvhodnější reprezentaci</strong> pojmu (model, obrázek, simulace),</li>
-        <li>předvídat <strong>typické miskoncepce</strong> a cíleně je „odkrývat“,</li>
-        <li>zvolit <strong>úlohy</strong> od jednoduchých po náročné (diferenciace),</li>
-        <li>poskytnout <strong>podporu</strong> a zároveň držet smysluplné cíle.</li>
+        <li>znalost typických <strong>žákovských miskoncepcí</strong>,</li>
+        <li>schopnost volit vhodné <strong>reprezentace</strong> (modely, analogie),</li>
+        <li>volbu úloh od jednoduchých k náročným,</li>
+        <li>citlivé přizpůsobení tempa a formy výuky.</li>
       </ul>
     </div>
 
     <div class="card">
-      <h4>Co se u informatiky často nedaří</h4>
+      <h4>PCK jako interpretace učiva</h4>
       <ul>
-        <li>zaměňování „umím kliknout“ za „<strong>rozumím principu</strong>“,</li>
-        <li>příliš rychlý skok do abstrakce bez modelů a příkladů,</li>
-        <li>jednotný postup pro všechny (bez podpory SVP a bez rozšíření pro nadané),</li>
-        <li>hodnocení pouze výsledku, ne procesu (postup, debugování, strategie).</li>
+        <li>učitel rozhoduje, <em>jak</em> pojem vysvětlit,</li>
+        <li>jaký příklad použít jako první,</li>
+        <li>co ponechat implicitní a co explicitně zdůraznit,</li>
+        <li>kdy zasáhnout a kdy nechat žáky hledat.</li>
       </ul>
     </div>
   </div>
 
-  <h3>Typické miskoncepce v informatice (na co myslet)</h3>
-  <div class="info-box">
-    <strong>Příklady miskoncepcí (časté u žáků):</strong>
-    <ul>
-      <li>„Počítač je chytrý, sám <strong>ví</strong>.“ (nepochopení, že jen vykonává instrukce)</li>
-      <li>„Když program nefunguje, je to <strong>rozbité</strong>, ne že mám chybu v logice.“</li>
-      <li>„Internet je jedna věc / jedno místo.“ (nepochopení sítí a distribuovaných služeb)</li>
-      <li>„0 v binární soustavě znamená nic, tak nemůže být důležitá.“ (reprezentace a pozice)</li>
-    </ul>
-  </div>
-
-  <h3>Ukázková psycho-didaktická transformace: binární zápis</h3>
+  <h3>Typické miskoncepce v informatice</h3>
   <p>
-    Odborně lze binární soustavu vysvětlit formálně (pozice, mocniny dvou, převody).
-    Psycho-didaktická transformace ale hledá cestu, která je pro žáky srozumitelná a zvládnutelná.
+    Psycho-didaktická transformace musí počítat s tím, že si žáci
+    vytvářejí vlastní (často chybná) vysvětlení jevů.
+    Pokud s nimi učitel nepracuje, mohou se fixovat a brzdit další učení.
   </p>
 
-  <div class="twoCol">
-    <div class="card">
-      <h4>Společné jádro (pro všechny)</h4>
-      <ul>
-        <li>start od <strong>modelu</strong>: kartičky 1, 2, 4, 8… (zapnuto/vypnuto),</li>
-        <li>aktivita „svítí/nesvítí“ → teprve potom zápis 0/1,</li>
-        <li>krátké úlohy: zapsat 5, 6, 9; přečíst 1011 apod.,</li>
-        <li>závěr: propojení s praxí (data v PC, obrázky, znaky).</li>
-      </ul>
-      <p class="mini">
-        Důraz je na porozumění: <strong>pozice</strong> a „zapnutí/vypnutí“ jako reprezentace informace.
-      </p>
-    </div>
-
-    <div class="card">
-      <h4>Diferenciace</h4>
-      <p style="margin:0 0 8px;">
-        <span class="pill">SVP</span>
-        <span class="pill">Nadaní</span>
-      </p>
-      <ul>
-        <li><strong>SVP:</strong> menší rozsah (do 16), více názornosti, pomalejší tempo, pracovní list s krokováním,
-          možnost ústního vysvětlení místo dlouhého zápisu.</li>
-        <li><strong>SVP:</strong> zjednodušené zadání, jasné instrukce, časté ověřování porozumění.</li>
-        <li><strong>Nadaní:</strong> rozšíření o převody do hex, ASCII/Unicode, vlastní „kódovací“ hru.</li>
-        <li><strong>Nadaní:</strong> úlohy typu „najdi více způsobů“, „optimalizuj počet bitů“.</li>
-      </ul>
-    </div>
-  </div>
-
-  <h3>Praktické zásady (rychlá pomůcka pro učitele)</h3>
-  <div class="callout">
-    <strong>Co v informatice často funguje:</strong>
-    <ul style="margin-top:8px;">
-      <li>od <strong>konkrétního</strong> k abstraktnímu (model → zápis → pravidlo),</li>
-      <li>krátké kroky + okamžitá zpětná vazba (debug jako součást učení),</li>
-      <li>kombinace metod: unplugged + digitální nástroj,</li>
-      <li>diferenciace: stejné téma, ale různá hloubka a různé formy výstupu,</li>
-      <li>hodnocení procesu (postup, strategie, argumentace), nejen výsledku.</li>
+  <div class="info-box">
+    <strong>Časté miskoncepce:</strong>
+    <ul>
+      <li>„Počítač ví, co chci.“ (nepochopení přesnosti instrukcí)</li>
+      <li>„Program funguje, tak je správný.“ (absence testování a ověřování)</li>
+      <li>„Chyba znamená, že na to nemám.“ (emoční blok)</li>
+      <li>„Internet = Wi-Fi.“ (nepochopení systémové povahy sítí)</li>
     </ul>
   </div>
 
+  <h3>Diferenciace výuky: SVP a nadaní žáci</h3>
+  <p>
+    Psycho-didaktická transformace je klíčová pro
+    <strong>inkluzivní výuku</strong>.
+    Stejné učivo může být zprostředkováno různými cestami
+    a s různou hloubkou.
+  </p>
+
+  <div class="grid">
+    <div class="card">
+      <h4>Žáci se SVP</h4>
+      <ul>
+        <li>jasná struktura a krokování,</li>
+        <li>vizualizace a konkrétní činnost,</li>
+        <li>menší rozsah, více času, alternativní výstupy,</li>
+        <li>důraz na podporu, ne na výkon.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h4>Nadaní žáci</h4>
+      <ul>
+        <li>rozšíření učiva do větší hloubky,</li>
+        <li>otevřené a problémové úlohy,</li>
+        <li>samostatné projekty a experimentování,</li>
+        <li>prostor pro vlastní postupy.</li>
+      </ul>
+    </div>
+  </div>
+
+  <h3>Příklad psycho-didaktické transformace: algoritmus</h3>
+  <p>
+    Odborně lze algoritmus definovat formálně.
+    Psycho-didaktická transformace však hledá
+    takovou interpretaci, která je pro žáky pochopitelná.
+  </p>
+
+  <div class="callout">
+    <strong>Postup učitele:</strong><br>
+    1) konkrétní činnost (návod pro robota),<br>
+    2) společné pojmenování kroků,<br>
+    3) vizualizace (šipky, bloky),<br>
+    4) teprve poté abstraktní pojem „algoritmus“.
+    <br><br>
+    <span class="pill">SVP</span> více opory, menší úlohy, práce ve dvojici.<br>
+    <span class="pill">Nadaní</span> optimalizace postupu, více variant řešení.
+  </div>
+
+  <h3>Rizika psycho-didaktické transformace</h3>
+  <div class="info-box">
+    <strong>Na co si dát pozor:</strong>
+    <ul>
+      <li>příliš jednotný postup pro všechny žáky,</li>
+      <li>zaměňování aktivity za porozumění,</li>
+      <li>ignorování miskoncepcí,</li>
+      <li>hodnocení pouze výsledku, nikoli procesu.</li>
+    </ul>
+  </div>
+
+  <h3>Sebereflexe učitele</h3>
+  <ul>
+    <li>Jaké miskoncepce mohou u tohoto tématu vzniknout?</li>
+    <li>Jak poznám, že žák skutečně rozumí?</li>
+    <li>Jak mohu nabídnout různé cesty ke stejnému cíli?</li>
+    <li>Kde mohu ubrat náročnost a kde naopak přidat výzvu?</li>
+  </ul>
+
   <p class="mini" style="margin-top:14px;">
-    Poznámka: Psycho-didaktická transformace úzce souvisí s kognitivní transformací – tedy s tím,
-    jak si žák vytváří mentální modely a jak dochází k porozumění a rekonstrukci poznatků.
+    Poznámka: Psycho-didaktická transformace navazuje na
+    <strong>onto-didaktickou</strong> (výběr obsahu) a připravuje půdu
+    pro <strong>kognitivní transformaci</strong> (změnu porozumění žáka).
   </p>
 </body>
 </html>

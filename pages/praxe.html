@@ -46,7 +46,7 @@
     p strong{ color:var(--text); }
 
     h3{
-      margin:18px 0 10px;
+      margin:22px 0 10px;
       font-size:18px;
       font-weight:800;
       color:var(--text);
@@ -69,7 +69,7 @@
       border-left:6px solid var(--blue);
       border-radius:10px;
       padding:14px 16px 14px 18px;
-      margin:14px 0 16px;
+      margin:16px 0 18px;
     }
     .info-box strong{
       display:block;
@@ -82,7 +82,7 @@
       display:grid;
       grid-template-columns:repeat(2, minmax(0, 1fr));
       gap:14px;
-      margin: 10px 0 16px;
+      margin:12px 0 18px;
     }
     @media (max-width: 900px){
       .grid{ grid-template-columns:1fr; }
@@ -113,18 +113,11 @@
       border:1px dashed #c7d2fe;
       background:#f8fafc;
       border-radius:12px;
-      padding:12px 14px;
-      margin: 10px 0 0;
+      padding:14px 16px;
+      margin:14px 0 18px;
       color:var(--muted);
       font-size:15.5px;
       line-height:1.65;
-    }
-    .callout strong{ color:var(--text); }
-
-    .mini{
-      font-size:14.5px;
-      color:var(--muted);
-      margin-top:8px;
     }
 
     .pill{
@@ -137,147 +130,242 @@
       background:#eef2ff;
       color:#3730a3;
     }
+
+    .mini{
+      font-size:14.5px;
+      color:var(--muted);
+      margin-top:10px;
+    }
   </style>
 </head>
 
 <body>
-  <h2>Praktické příklady z české pedagogické praxe</h2>
+  <h2>Praktické příklady z pedagogické praxe</h2>
   <hr>
 
   <p>
-    Následující příklady ilustrují, jak se <strong>didaktická transformace obsahu</strong>
-    projevuje v reálné výuce informatiky na různých stupních škol. Ukazují propojení
-    <strong>onto-, psycho- i kognitivní transformace</strong> a práci s různými skupinami žáků.
+    Tato kapitola ukazuje, jak se <strong>didaktická transformace obsahu</strong>
+    promítá do reálné výuky informatiky v českém školním prostředí.
+    Každý scénář obsahuje cíle, postup, diferenciaci pro <strong>SVP</strong> i
+    <strong>nadané žáky</strong> a návrh hodnocení.
   </p>
 
   <div>
     <span class="tag">ZŠ</span>
-    <span class="tag">SŠ</span>
-    <span class="tag">SVP</span>
-    <span class="tag">nadaní</span>
+    <span class="tag">SŠ/G</span>
+    <span class="tag">diferenciace</span>
+    <span class="tag">hodnocení</span>
+    <span class="tag">česká praxe</span>
   </div>
 
-  <h3>Příklad 1: Algoritmizace na 1. stupni ZŠ (unplugged)</h3>
   <div class="info-box">
-    <strong>Situace:</strong>
-    <p style="margin:0;">
-      V hodině informatiky v 4. ročníku se žáci seznamují s pojmem algoritmus
-      bez použití počítače (unplugged aktivita).
+    <strong>Studijní cíle (po prostudování student dokáže):</strong>
+    <ul>
+      <li>uvést konkrétní příklady onto-, psycho- a kognitivní transformace ve výuce informatiky,</li>
+      <li>navrhnout strukturu hodiny s diferenciací pro SVP i nadané,</li>
+      <li>zvolit odpovídající formu ověřování a hodnocení (včetně rubrik),</li>
+      <li>popsat, jak praxe podporuje porozumění a transfer.</li>
+    </ul>
+    <p class="mini" style="margin:8px 0 0;">
+      <strong>Doporučený rozsah studia:</strong> 30–45 minut.
     </p>
   </div>
 
-  <div class="grid">
-    <div class="card">
-      <h4>Didaktická transformace</h4>
-      <ul>
-        <li><strong>Onto:</strong> výběr pojmu „algoritmus“ z informatiky.</li>
-        <li><strong>Psycho:</strong> konkrétní činnost (pokyny spolužákovi-robotovi).</li>
-        <li><strong>Kognitivní:</strong> vytvoření mentálního modelu „postup krok za krokem“.</li>
-      </ul>
-    </div>
-
-    <div class="card">
-      <h4>Diferenciace</h4>
-      <ul>
-        <li><strong>SVP:</strong> kratší trasy, kartičky s piktogramy, práce ve dvojici.</li>
-        <li><strong>Nadaní:</strong> přidání podmínek („pokud narazíš…“), optimalizace počtu kroků.</li>
-      </ul>
-    </div>
-  </div>
-
-  <h3>Příklad 2: Programování na 2. stupni ZŠ (blokové prostředí)</h3>
+  <h3>Jak číst příklady (propojení teorií)</h3>
   <div class="info-box">
-    <strong>Situace:</strong>
-    <p style="margin:0;">
-      Žáci 6.–7. ročníku vytvářejí jednoduchou hru v prostředí Scratch nebo MakeCode.
-    </p>
+    <strong>Každý scénář obsahuje tři vrstvy transformace:</strong>
+    <ul>
+      <li><strong>Onto</strong>: jaký princip/téma z informatiky bylo vybráno (a proč),</li>
+      <li><strong>Psycho</strong>: jak je učivo interpretováno a přizpůsobeno žákům,</li>
+      <li><strong>Kognitivní</strong>: jak se podporuje porozumění, mentální model a transfer.</li>
+    </ul>
   </div>
 
+  <h3>Scénář 1 (ZŠ 1. stupeň): Algoritmus „Robot na mřížce“ (unplugged)</h3>
   <div class="grid">
     <div class="card">
-      <h4>Didaktická transformace</h4>
+      <h4>Cíl a výstupy</h4>
       <ul>
-        <li><strong>Onto:</strong> algoritmy, proměnné, podmínky.</li>
-        <li><strong>Psycho:</strong> práce s bloky místo textového kódu.</li>
-        <li><strong>Kognitivní:</strong> pochopení toku programu a příčiny chyb (debug).</li>
+        <li><strong>Cíl:</strong> žák vytvoří a ověří postup řešení (algoritmus).</li>
+        <li><strong>Ověřitelný výstup:</strong> žák zapíše postup pomocí šipek/karet a vysvětlí ho.</li>
       </ul>
     </div>
-
     <div class="card">
-      <h4>Diferenciace</h4>
-      <ul>
-        <li><strong>SVP:</strong> částečně hotový projekt, vizuální kontrola kroků.</li>
-        <li><strong>Nadaní:</strong> rozšíření o skóre, více úrovní, vlastní grafiku.</li>
-      </ul>
+      <h4>Postup (20–30 min)</h4>
+      <ol>
+        <li>Učitel představí mřížku (podlaha/papír) a „robota“.</li>
+        <li>Žáci dávají instrukce (kroky), robot je vykonává.</li>
+        <li>Reflexe: kde byl problém? proč? co změnit?</li>
+        <li>Rozšíření: překážky, podmínky („když… tak…“).</li>
+      </ol>
     </div>
   </div>
 
-  <h3>Příklad 3: Práce s daty na SŠ / gymnáziu</h3>
-  <div class="info-box">
-    <strong>Situace:</strong>
-    <p style="margin:0;">
-      Studenti pracují s reálnými daty (např. otevřená data obcí, statistiky dopravy,
-      meteorologická data) v tabulkovém procesoru nebo jednoduchém skriptu.
-    </p>
-  </div>
-
-  <div class="grid">
-    <div class="card">
-      <h4>Didaktická transformace</h4>
-      <ul>
-        <li><strong>Onto:</strong> datová analýza, filtrace, vizualizace.</li>
-        <li><strong>Psycho:</strong> napojení na reálný kontext (okolí školy, město).</li>
-        <li><strong>Kognitivní:</strong> porozumění vztahu data → informace → rozhodnutí.</li>
-      </ul>
-    </div>
-
-    <div class="card">
-      <h4>Diferenciace</h4>
-      <ul>
-        <li><strong>SVP:</strong> menší dataset, předpřipravené grafy.</li>
-        <li><strong>Nadaní:</strong> vlastní otázky nad daty, pokročilé funkce, skriptování.</li>
-      </ul>
-    </div>
-  </div>
-
-  <h3>Příklad 4: Debugování jako učební strategie</h3>
-  <div class="info-box">
-    <strong>Situace:</strong>
-    <p style="margin:0;">
-      Učitel záměrně poskytne chybný program a zadá úkol „najdi a oprav chybu“.
-    </p>
-  </div>
-
-  <div class="grid">
-    <div class="card">
-      <h4>Didaktický přínos</h4>
-      <ul>
-        <li>posiluje kognitivní transformaci (analýza příčiny chyby),</li>
-        <li>mění vnímání chyby z neúspěchu na nástroj učení,</li>
-        <li>rozvíjí strategické myšlení a argumentaci.</li>
-      </ul>
-    </div>
-
-    <div class="card">
-      <h4>Úpravy pro žáky</h4>
-      <ul>
-        <li><strong>SVP:</strong> menší počet chyb, vodicí otázky.</li>
-        <li><strong>Nadaní:</strong> více chyb, hledání alternativních řešení.</li>
-      </ul>
-    </div>
-  </div>
-
-  <h3>Shrnutí významu praxe</h3>
   <div class="callout">
-    <strong>Co ukazují příklady:</strong><br>
-    Didaktická transformace obsahu není jednorázový krok, ale <strong>neustálý proces</strong>.
-    Učitel musí průběžně reagovat na žáky, jejich porozumění a kontext třídy.
-    Právě v praxi se propojují teoretické koncepty s reálnou výukou informatiky.
+    <strong>Diferenciace:</strong><br>
+    <span class="pill">SVP</span> kratší trasa, méně instrukcí, piktogramy, práce ve dvojici.<br>
+    <span class="pill">Nadaní</span> minimalizace kroků, více tras, zavedení podmínky, hledání více řešení.
   </div>
+
+  <div class="info-box">
+    <strong>Hodnocení (rychlá rubrika):</strong>
+    <ul>
+      <li><strong>3 body:</strong> postup je úplný, přesný, žák umí vysvětlit proč funguje.</li>
+      <li><strong>2 body:</strong> postup funguje, ale vysvětlení je nejasné / chybí kontrola.</li>
+      <li><strong>1 bod:</strong> postup není funkční nebo je náhodný.</li>
+    </ul>
+  </div>
+
+  <h3>Scénář 2 (ZŠ 2. stupeň): Proměnná jako „počítadlo“ (Scratch/MakeCode)</h3>
+  <div class="grid">
+    <div class="card">
+      <h4>Cíl a výstupy</h4>
+      <ul>
+        <li><strong>Cíl:</strong> žák pochopí proměnnou jako místo pro data, která se mění.</li>
+        <li><strong>Ověřitelný výstup:</strong> žák vytvoří skóre/časovač a popíše, kdy se hodnota mění.</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h4>Postup (30–45 min)</h4>
+      <ol>
+        <li>Ukázka hotové hry: kde je skóre? co se děje po zásahu?</li>
+        <li>Žáci doplní do šablony proměnnou „skóre“.</li>
+        <li>Test: co se stane, když „přičti“ dáme jinam?</li>
+        <li>Reflexe: jaký je vstup, proces, výstup?</li>
+      </ol>
+    </div>
+  </div>
+
+  <div class="callout">
+    <strong>Diferenciace:</strong><br>
+    <span class="pill">SVP</span> šablona se zvýrazněnými místy, menší počet bloků, kontrolní otázky.<br>
+    <span class="pill">Nadaní</span> dvě proměnné (čas + skóre), podmínky, více úrovní, srovnání s listem.
+  </div>
+
+  <div class="info-box">
+    <strong>Hodnocení (rubrika – proces):</strong>
+    <ul>
+      <li><strong>Porozumění:</strong> žák umí říct, co proměnná „dělá“ a kdy se mění.</li>
+      <li><strong>Testování:</strong> žák ověří změnu na konkrétním příkladu (debug).</li>
+      <li><strong>Transfer:</strong> žák navrhne další použití (životy, počet pokusů, čas).</li>
+    </ul>
+  </div>
+
+  <h3>Scénář 3 (ZŠ/SŠ): Debug jako kultura učení</h3>
+  <p>
+    Tento scénář posiluje kognitivní transformaci: žáci upravují mentální model „proč to nefunguje“,
+    učí se strategii řešení a argumentaci. Je velmi vhodný i pro inkluzi.
+  </p>
+
+  <div class="grid">
+    <div class="card">
+      <h4>Postup</h4>
+      <ol>
+        <li>Učitel dá „záměrně chybný“ kód (např. špatná podmínka).</li>
+        <li>Žáci ve dvojici hledají chybu pomocí testování.</li>
+        <li>Zapíšou hypotézu: „Myslíme si, že… protože…“</li>
+        <li>Ověří opravu a vysvětlí změnu.</li>
+      </ol>
+    </div>
+    <div class="card">
+      <h4>Diferenciace</h4>
+      <ul>
+        <li><span class="pill">SVP</span> méně chyb, vodicí otázky, „checklist“ kroků.</li>
+        <li><span class="pill">Nadaní</span> více chyb, alternativní řešení, optimalizace.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="info-box">
+    <strong>Hodnocení (rubrika):</strong>
+    <ul>
+      <li><strong>3 body:</strong> žák popíše příčinu chyby a strategii hledání.</li>
+      <li><strong>2 body:</strong> žák chybu opraví, ale těžko vysvětluje příčinu.</li>
+      <li><strong>1 bod:</strong> žák opravuje metodou pokus–omyl bez strategie.</li>
+    </ul>
+  </div>
+
+  <h3>Scénář 4 (SŠ/G): Práce s daty a rozhodování</h3>
+  <div class="grid">
+    <div class="card">
+      <h4>Cíl a výstupy</h4>
+      <ul>
+        <li><strong>Cíl:</strong> žák porozumí vztahu data → informace → rozhodnutí.</li>
+        <li><strong>Ověřitelný výstup:</strong> žák vytvoří graf a obhájí závěr z dat.</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h4>Postup (45 min)</h4>
+      <ol>
+        <li>Společné zadání otázky: „Co chceme zjistit?“</li>
+        <li>Práce s datasetem (menší/ větší dle úrovně).</li>
+        <li>Filtrace, graf, interpretace.</li>
+        <li>Diskuse: co data neříkají? kde je zkreslení?</li>
+      </ol>
+    </div>
+  </div>
+
+  <div class="callout">
+    <strong>Diferenciace:</strong><br>
+    <span class="pill">SVP</span> menší dataset, předpřipravené sloupce, více vizualizace.<br>
+    <span class="pill">Nadaní</span> vlastní výzkumná otázka, pokročilé funkce, alternativní grafy.
+  </div>
+
+  <div class="info-box">
+    <strong>Hodnocení:</strong>
+    <ul>
+      <li>správnost práce s daty (filtrace, výběr),</li>
+      <li>smysluplnost vizualizace,</li>
+      <li>argumentace závěru (proč si to myslím),</li>
+      <li>reflexe limitů dat (kritické myšlení).</li>
+    </ul>
+  </div>
+
+  <h3>Scénář 5 (ZŠ/SŠ): Bezpečnost a digitální stopa – případová studie</h3>
+  <p>
+    Tento scénář se opírá o reálné situace žáků a podporuje přenos do života.
+    Vhodné jako kratší blok nebo součást třídnických hodin.
+  </p>
+
+  <div class="grid">
+    <div class="card">
+      <h4>Postup</h4>
+      <ol>
+        <li>Krátký příběh (anonymizovaná situace z praxe).</li>
+        <li>Skupiny: identifikují rizika a navrhnou řešení.</li>
+        <li>Společné sdílení: co je prevence, co je reakce?</li>
+      </ol>
+    </div>
+    <div class="card">
+      <h4>Diferenciace a hodnocení</h4>
+      <ul>
+        <li><span class="pill">SVP</span> strukturovaný pracovní list, méně pojmů.</li>
+        <li><span class="pill">Nadaní</span> návrh školního pravidla/protokolu.</li>
+        <li>hodnotí se argumentace a použitelnost návrhů.</li>
+      </ul>
+    </div>
+  </div>
+
+  <h3>Shrnutí: co z praxe plyne pro didaktickou transformaci</h3>
+  <div class="callout">
+    <strong>Hlavní závěr:</strong><br>
+    Didaktická transformace obsahu je v praxi vidět v tom, jak učitel:
+    vybírá obsah (onto), interpretuje ho pro konkrétní třídu (psycho)
+    a podporuje porozumění a transfer (kognitivní). Praxe ukazuje,
+    že bez diferenciace a práce s chybou je učení v informatice často jen „napodobení“.
+  </div>
+
+  <h3>Kontrolní otázky (sebehodnocení)</h3>
+  <ul>
+    <li>Uveď příklad, kde je vidět onto-didaktická transformace ve scénáři 1 nebo 2.</li>
+    <li>Jaký prvek psycho-didaktické transformace je nejdůležitější pro SVP žáky?</li>
+    <li>Který scénář nejvíc podporuje kognitivní transformaci a proč?</li>
+    <li>Jak bys upravil(a) hodnocení, aby se hodnotil proces, ne jen výsledek?</li>
+  </ul>
 
   <p class="mini" style="margin-top:14px;">
-    Poznámka: Uvedené příklady vycházejí z běžné české školní praxe a z principů
-    současné didaktiky informatiky.
+    Poznámka: Scénáře jsou koncipovány tak, aby byly použitelné v běžných podmínkách české školy.
+    Konkrétní nástroje (Scratch/MakeCode/tabulky) lze nahradit ekvivalenty dle vybavení školy.
   </p>
 </body>
 </html>

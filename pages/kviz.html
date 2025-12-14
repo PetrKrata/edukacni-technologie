@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Kvíz – ověření znalostí</title>
+  <title>Ověření znalostí – kvíz</title>
   <style>
     :root{
       --blue:#1f3b70;
@@ -37,32 +37,17 @@
       margin:8px 0 18px;
     }
 
+    h3{
+      margin:22px 0 10px;
+      font-size:18px;
+      font-weight:800;
+    }
+
     p{
       margin:0 0 14px;
       line-height:1.65;
       font-size:15.5px;
       color:var(--muted);
-    }
-
-    h3{
-      margin:22px 0 10px;
-      font-size:18px;
-      font-weight:800;
-      color:var(--text);
-    }
-
-    .question{
-      background:var(--card);
-      border:1px solid var(--border);
-      border-radius:12px;
-      padding:14px 16px;
-      margin-bottom:14px;
-    }
-
-    .question strong{
-      display:block;
-      margin-bottom:6px;
-      font-size:15.5px;
     }
 
     ul{
@@ -73,139 +58,191 @@
       font-size:15.5px;
     }
 
-    .open{
-      background:#f8fafc;
-      border:1px dashed #c7d2fe;
-      border-radius:12px;
-      padding:14px 16px;
-      margin-bottom:14px;
-      color:var(--muted);
-    }
-
-    .solution{
+    .info-box{
       background:var(--box);
       border-left:6px solid var(--blue);
       border-radius:10px;
-      padding:14px 16px 14px 18px;
-      margin-top:18px;
+      padding:14px 16px;
+      margin:16px 0 18px;
     }
 
-    .solution strong{
+    .card{
+      background:var(--card);
+      border:1px solid var(--border);
+      border-radius:12px;
+      padding:14px 16px;
+      margin-bottom:14px;
+    }
+
+    .q{
+      font-weight:800;
+      margin-bottom:8px;
+    }
+
+    label{
       display:block;
-      margin-bottom:6px;
-      color:var(--text);
-    }
-
-    .check{
-      color:var(--ok);
-      font-weight:700;
-    }
-
-    .mini{
-      font-size:14.5px;
+      margin:6px 0;
+      cursor:pointer;
       color:var(--muted);
+    }
+
+    details{
       margin-top:10px;
+    }
+
+    summary{
+      cursor:pointer;
+      font-weight:700;
+      color:var(--blue);
+    }
+
+    .answer{
+      margin-top:10px;
+      padding:10px 12px;
+      border-left:4px solid var(--ok);
+      background:#ecfdf5;
+      border-radius:8px;
+      font-size:14.8px;
+      color:#064e3b;
+    }
+
+    textarea{
+      width:100%;
+      min-height:90px;
+      padding:10px;
+      border-radius:8px;
+      border:1px solid var(--border);
+      font-family:inherit;
+      font-size:14.5px;
+      resize:vertical;
     }
   </style>
 </head>
 
 <body>
-  <h2>Kvíz – ověření znalostí</h2>
+  <h2>Ověření znalostí – kvíz</h2>
   <hr>
 
   <p>
-    Tento kvíz slouží k <strong>samostatnému ověření porozumění</strong> tématu didaktické
-    transformace obsahu. Nejprve si odpovědi zkuste promyslet sami,
-    <strong>řešení naleznete níže</strong>.
+    Kvíz slouží k <strong>ověření porozumění</strong> problematice didaktické transformace obsahu
+    v informatice. U otevřených otázek jsou uvedena <strong>orientační kritéria správné odpovědi</strong>,
+    nikoli jediná závazná formulace.
   </p>
 
-  <h3>Uzavřené otázky (výběr odpovědi)</h3>
-
-  <div class="question">
-    <strong>1. Co nejlépe vystihuje pojem didaktická transformace obsahu?</strong>
+  <div class="info-box">
+    <strong>Instrukce:</strong>
     <ul>
-      <li>a) Přepis učebnic do digitální podoby</li>
-      <li>b) Převod odborného obsahu do učiva vhodného pro žáky</li>
-      <li>c) Hodnocení výsledků žáků na konci školního roku</li>
+      <li>nejprve odpovídej bez nápovědy,</li>
+      <li>poté porovnej své odpovědi s řešením,</li>
+      <li>u otevřených otázek se zaměř na argumentaci a příklady.</li>
     </ul>
   </div>
 
-  <div class="question">
-    <strong>2. Která oblast řeší převod vědního obsahu do kurikula?</strong>
-    <ul>
-      <li>a) Psycho-didaktická transformace</li>
-      <li>b) Kognitivní transformace</li>
-      <li>c) Onto-didaktická transformace</li>
-    </ul>
+  <!-- UZAVŘENÉ OTÁZKY -->
+  <h3>Část A – Uzavřené otázky</h3>
+
+  <div class="card">
+    <div class="q">1. Co je hlavním cílem didaktické transformace obsahu?</div>
+    <label><input type="radio" name="q1"> zjednodušit učivo</label>
+    <label><input type="radio" name="q1"> převést odborný obsah do vzdělávací podoby</label>
+    <label><input type="radio" name="q1"> nahradit teorii praxí</label>
+    <details>
+      <summary>Zobrazit řešení</summary>
+      <div class="answer">
+        Správně: <strong>převést odborný obsah do vzdělávací podoby</strong>.
+      </div>
+    </details>
   </div>
 
-  <div class="question">
-    <strong>3. Co je hlavním cílem psycho-didaktické transformace?</strong>
-    <ul>
-      <li>a) Zachovat maximální odbornou náročnost obsahu</li>
-      <li>b) Přizpůsobit učivo způsobům učení a možnostem žáků</li>
-      <li>c) Sjednotit výuku pro všechny žáky bez rozdílů</li>
-    </ul>
+  <div class="card">
+    <div class="q">2. Onto-didaktická transformace se týká především otázky:</div>
+    <label><input type="radio" name="q2"> jak se žák učí</label>
+    <label><input type="radio" name="q2"> co má být součástí kurikula</label>
+    <label><input type="radio" name="q2"> jak se hodnotí výkon</label>
+    <details>
+      <summary>Zobrazit řešení</summary>
+      <div class="answer">
+        Správně: <strong>co má být součástí kurikula</strong>.
+      </div>
+    </details>
   </div>
 
-  <div class="question">
-    <strong>4. Který příklad nejlépe ilustruje kognitivní transformaci?</strong>
-    <ul>
-      <li>a) Zapsání tématu do ŠVP</li>
-      <li>b) Vysvětlení učiva pomocí odborné definice</li>
-      <li>c) Změna žákova porozumění a vytvoření mentálního modelu</li>
-    </ul>
+  <div class="card">
+    <div class="q">3. Kognitivní transformace nastává tehdy, když žák:</div>
+    <label><input type="radio" name="q3"> zopakuje postup podle návodu</label>
+    <label><input type="radio" name="q3"> porozumí principu a dokáže ho použít jinde</label>
+    <label><input type="radio" name="q3"> pracuje rychleji než ostatní</label>
+    <details>
+      <summary>Zobrazit řešení</summary>
+      <div class="answer">
+        Správně: <strong>porozumí principu a dokáže ho použít jinde</strong>.
+      </div>
+    </details>
   </div>
 
-  <div class="question">
-    <strong>5. Jaký je hlavní smysl revizí RVP v oblasti informatiky?</strong>
-    <ul>
-      <li>a) Nahradit informatiku jiným předmětem</li>
-      <li>b) Zaměřit se pouze na ovládání konkrétních programů</li>
-      <li>c) Rozvíjet informatické myšlení a porozumění principům</li>
-    </ul>
+  <div class="card">
+    <div class="q">4. Revize RVP v informatice kladou důraz především na:</div>
+    <label><input type="radio" name="q4"> konkrétní software</label>
+    <label><input type="radio" name="q4"> informatické myšlení a principy</label>
+    <label><input type="radio" name="q4"> pamětné učení pojmů</label>
+    <details>
+      <summary>Zobrazit řešení</summary>
+      <div class="answer">
+        Správně: <strong>informatické myšlení a principy</strong>.
+      </div>
+    </details>
   </div>
 
-  <h3>Otevřené otázky (k zamyšlení)</h3>
+  <!-- OTEVŘENÉ OTÁZKY -->
+  <h3>Část B – Otevřené otázky</h3>
 
-  <div class="open">
-    <strong>6. Vysvětli vlastními slovy rozdíl mezi informatikou a didaktikou informatiky.</strong>
-    <p>
-      (Zaměř se na to, co zkoumá informatika jako obor a čím se zabývá didaktika informatiky.)
-    </p>
+  <div class="card">
+    <div class="q">5. Vysvětli rozdíl mezi onto-didaktickou a psycho-didaktickou transformací.</div>
+    <textarea></textarea>
+    <details>
+      <summary>Orientační vyhodnocení</summary>
+      <div class="answer">
+        Odpověď má rozlišit výběr učiva (onto) a jeho přizpůsobení konkrétním žákům (psycho).
+        Vhodné je doplnění příkladem.
+      </div>
+    </details>
   </div>
 
-  <div class="open">
-    <strong>7. Uveď konkrétní příklad psycho-didaktické transformace z výuky informatiky.</strong>
-    <p>
-      (Např. práce s blokovým programováním, diferenciace úloh, podpora žáků se SVP.)
-    </p>
+  <div class="card">
+    <div class="q">6. Uveď příklad miskoncepce v informatice a způsob práce s ní.</div>
+    <textarea></textarea>
+    <details>
+      <summary>Orientační vyhodnocení</summary>
+      <div class="answer">
+        Správná odpověď obsahuje konkrétní miskoncepci a popis didaktického postupu
+        (diskuse, práce s chybou, demonstrace).
+      </div>
+    </details>
   </div>
 
-  <div class="open">
-    <strong>8. Jak poznáš, že u žáka proběhla kognitivní transformace obsahu?</strong>
-    <p>
-      (Zaměř se na porozumění, přenos znalostí a práci s chybou.)
-    </p>
+  <div class="card">
+    <div class="q">7. Popiš situaci, ve které dochází ke kognitivní transformaci obsahu.</div>
+    <textarea></textarea>
+    <details>
+      <summary>Orientační vyhodnocení</summary>
+      <div class="answer">
+        Je popsána změna porozumění žáka, nikoli jen splnění úkolu.
+        Vhodné je zmínění přenosu principu.
+      </div>
+    </details>
   </div>
 
-  <h3>Řešení – sebehodnocení</h3>
-
-  <div class="solution">
-    <strong>Správné odpovědi (uzavřené otázky):</strong>
-    <ul>
-      <li>1. <span class="check">b)</span></li>
-      <li>2. <span class="check">c)</span></li>
-      <li>3. <span class="check">b)</span></li>
-      <li>4. <span class="check">c)</span></li>
-      <li>5. <span class="check">c)</span></li>
-    </ul>
+  <div class="card">
+    <div class="q">8. Jak revize RVP ovlivňují výuku informatiky?</div>
+    <textarea></textarea>
+    <details>
+      <summary>Orientační vyhodnocení</summary>
+      <div class="answer">
+        Odpověď zmiňuje posun k principům, změnu pojetí výuky
+        a zvýšené nároky na didaktickou přípravu učitele.
+      </div>
+    </details>
   </div>
 
-  <p class="mini">
-    Sebehodnocení: Pokud jsi správně odpověděl/a alespoň na 4 z 5 uzavřených otázek
-    a dokážeš smysluplně reagovat na otevřené otázky, máš téma zvládnuté
-    na úrovni potřebné pro zkoušku.
-  </p>
 </body>
 </html>
