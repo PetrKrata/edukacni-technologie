@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kognitivní transformace obsahu</title>
+  <style>
+    :root{
+      --blue:#1f3b70;
+      --text:#111827;
+      --muted:#374151;
+      --line:#e5e7eb;
+      --box:#eef2f7;
+      --card:#f9fafb;
+      --border:#e5e7eb;
+    }
+
+    body{
+      margin:0;
+      padding:18px 22px;
+      font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
+      color:var(--text);
+      background:#fff;
+    }
+
+    h2{
+      margin:0 0 8px;
+      font-size:26px;
+      font-weight:800;
+      color:var(--blue);
+      letter-spacing:-0.2px;
+    }
+
+    hr{
+      border:none;
+      border-top:2px solid var(--line);
+      margin:8px 0 18px;
+    }
+
+    p{
+      margin:0 0 14px;
+      line-height:1.65;
+      font-size:15.5px;
+      color:var(--muted);
+    }
+    p strong{ color:var(--text); }
+
+    h3{
+      margin:18px 0 10px;
+      font-size:18px;
+      font-weight:800;
+      color:var(--text);
+    }
+
+    .tag{
+      display:inline-block;
+      background:#e5f1ff;
+      color:var(--blue);
+      border-radius:999px;
+      padding:3px 10px;
+      font-size:12.5px;
+      font-weight:700;
+      margin-right:6px;
+      margin-bottom:6px;
+    }
+
+    .info-box{
+      background:var(--box);
+      border-left:6px solid var(--blue);
+      border-radius:10px;
+      padding:14px 16px 14px 18px;
+      margin:14px 0 16px;
+    }
+    .info-box strong{
+      display:block;
+      margin-bottom:8px;
+      color:var(--text);
+      font-size:15.5px;
+    }
+
+    .grid{
+      display:grid;
+      grid-template-columns:repeat(2, minmax(0, 1fr));
+      gap:14px;
+      margin: 10px 0 16px;
+    }
+    @media (max-width: 900px){
+      .grid{ grid-template-columns:1fr; }
+    }
+
+    .card{
+      background:var(--card);
+      border:1px solid var(--border);
+      border-radius:12px;
+      padding:14px 16px;
+    }
+    .card h4{
+      margin:0 0 8px;
+      font-size:16px;
+      color:var(--text);
+      font-weight:800;
+    }
+
+    ul, ol{
+      margin:0;
+      padding-left:20px;
+      color:var(--muted);
+      line-height:1.7;
+      font-size:15.5px;
+    }
+
+    .callout{
+      border:1px dashed #c7d2fe;
+      background:#f8fafc;
+      border-radius:12px;
+      padding:12px 14px;
+      margin: 10px 0 0;
+      color:var(--muted);
+      font-size:15.5px;
+      line-height:1.65;
+    }
+    .callout strong{ color:var(--text); }
+
+    .mini{
+      font-size:14.5px;
+      color:var(--muted);
+      margin-top:8px;
+    }
+
+    .pill{
+      display:inline-block;
+      padding:2px 10px;
+      border-radius:999px;
+      font-size:12.5px;
+      font-weight:700;
+      margin-right:6px;
+      background:#eef2ff;
+      color:#3730a3;
+    }
+  </style>
+</head>
+
+<body>
+  <h2>Kognitivní transformace obsahu</h2>
+  <hr>
+
+  <p>
+    <strong>Kognitivní transformace</strong> popisuje, co se děje „v hlavě žáka“ při učení:
+    jak si vytváří <strong>mentální modely</strong>, jak propojuje nové poznatky s těmi dřívějšími
+    a jak se mění jeho porozumění v čase. Jinými slovy: nejde jen o to, co učitel učí,
+    ale <strong>jak tomu žák skutečně porozumí</strong>.
+  </p>
+
+  <div>
+    <span class="tag">mentální modely</span>
+    <span class="tag">miskoncepce</span>
+    <span class="tag">scaffolding</span>
+    <span class="tag">učení z chyb</span>
+  </div>
+
+  <div class="info-box">
+    <strong>Klíčová otázka kognitivní transformace:</strong>
+    <p style="margin:0;">
+      „Jaké <strong>vnitřní porozumění</strong> si z výuky žák odnese? Jaké si vytvoří
+      mentální modely – a nejsou některé z nich chybné?“
+    </p>
+  </div>
+
+  <h3>Mentální modely v informatice (proč jsou důležité)</h3>
+  <p>
+    Informatika je plná abstraktních pojmů (algoritmus, proměnná, síť, data, systém).
+    Žák si k nim postupně vytváří mentální model – „představu, jak to funguje“. Pokud je model
+    neúplný nebo chybný, žák může zvládnout postup „nazpaměť“, ale <strong>nepřenese</strong>
+    znalost do nové situace.
+  </p>
+
+  <div class="grid">
+    <div class="card">
+      <h4>Příklady žádoucích mentálních modelů</h4>
+      <ul>
+        <li><strong>Algoritmus</strong> = postup (vstup → kroky → výstup), který lze ověřit.</li>
+        <li><strong>Program</strong> = přesný zápis instrukcí pro stroj (ne „kouzlo“).</li>
+        <li><strong>Chyba</strong> = informace (vodítko), ne selhání.</li>
+        <li><strong>Síť</strong> = propojené uzly a služby (ne „jedno místo internet“).</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h4>Příklady typických miskoncepcí</h4>
+      <ul>
+        <li>„Když to funguje, tak tomu rozumím.“ (záměna výsledku za porozumění)</li>
+        <li>„Kód se vykoná celý najednou.“ (nepochopení toku programu)</li>
+        <li>„Proměnná je vždy číslo.“ (nepochopení typů a reprezentace)</li>
+        <li>„Wi-Fi = internet.“ (nepochopení vrstvy připojení vs. služby)</li>
+      </ul>
+    </div>
+  </div>
+
+  <h3>Scaffolding: postupné opory při učení</h3>
+  <p>
+    U kognitivní transformace je klíčové žáka „podržet“ v okamžiku, kdy je úloha na hraně jeho možností.
+    To se často řeší pomocí <strong>scaffoldingu</strong> (postupných opor), které se časem odebírají:
+    od konkrétní ukázky až po samostatné řešení.
+  </p>
+
+  <div class="info-box">
+    <strong>Praktické opory (scaffolding) v informatice:</strong>
+    <ul>
+      <li>model (obrázek, diagram, blokové schéma, simulace),</li>
+      <li>částečně hotový kód / šablona (doplnit chybějící část),</li>
+      <li>kontrolní otázky („Co je vstup? Jaký má být výstup?“),</li>
+      <li>rubrika hodnocení (co je správné řešení, co se hodnotí).</li>
+    </ul>
+  </div>
+
+  <h3>Učení z chyb: debug jako součást myšlení</h3>
+  <p>
+    V informatice je chyba přirozená. Kognitivně je důležité, aby žák pochopil, že hledání chyby
+    (<strong>debugování</strong>) je normální proces. Když se z chyby stane „neúspěch“, žák se začne
+    vyhýbat náročnějším úlohám a kognitivní transformace se zpomalí.
+  </p>
+
+  <div class="callout">
+    <strong>Didaktický trik:</strong><br>
+    Nechej žáky dostat „záměrně chybný“ program a dej jim roli detektivů.
+    Tím se chyba přepne z „selhání“ na „úkol“ a podporuje se zdravý mentální model:
+    <strong>programátor = člověk, který postupně ladí</strong>.
+  </div>
+
+  <h3>Ukázkový příklad: proměnná ve Scratch / blokovém prostředí</h3>
+  <p>
+    Odborně je proměnná abstraktní pojem. Kognitivní transformace řeší, jak žák proměnnou pochopí,
+    aby ji uměl použít i jinde (např. v Pythonu).
+  </p>
+
+  <div class="grid">
+    <div class="card">
+      <h4>Krokování porozumění (mentální model)</h4>
+      <ol>
+        <li><strong>Konkrétní zkušenost:</strong> „mám krabičku s číslem“ (skóre ve hře).</li>
+        <li><strong>Akce:</strong> číslo se mění (přičti 1 při zásahu).</li>
+        <li><strong>Kontrola:</strong> zobraz hodnotu (na obrazovce).</li>
+        <li><strong>Přenos:</strong> podobně funguje počítadlo, časovač, životy.</li>
+        <li><strong>Abstrakce:</strong> proměnná = pojmenované místo pro data.</li>
+      </ol>
+    </div>
+
+    <div class="card">
+      <h4>Diferenciace</h4>
+      <p style="margin:0 0 8px;">
+        <span class="pill">SVP</span>
+        <span class="pill">Nadaní</span>
+      </p>
+      <ul>
+        <li><strong>SVP:</strong> více názornosti (zobrazování hodnot), kratší úlohy, práce po krocích,
+          kartičky „vstup–proces–výstup“, více času.</li>
+        <li><strong>Nadaní:</strong> více proměnných, podmínky (if), vlastní mechanika hry, porovnání se seznamem (list),
+          propojení s textovým kódem.</li>
+      </ul>
+    </div>
+  </div>
+
+  <h3>Jak poznat, že kognitivní transformace proběhla</h3>
+  <div class="info-box">
+    <strong>Signály porozumění:</strong>
+    <ul>
+      <li>žák umí vysvětlit „proč to funguje“ vlastními slovy,</li>
+      <li>přenese dovednost do nové úlohy (transfer),</li>
+      <li>umí najít chybu a popsat strategii řešení,</li>
+      <li>neopírá se jen o napodobení, ale o princip.</li>
+    </ul>
+  </div>
+
+  <p class="mini" style="margin-top:14px;">
+    Poznámka: Kognitivní transformace úzce navazuje na psycho-didaktickou (přizpůsobení žákům) a zároveň
+    se projevuje v tom, jak volíme úlohy, zpětnou vazbu a hodnocení.
+  </p>
+</body>
+</html>

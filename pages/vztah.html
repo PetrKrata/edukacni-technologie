@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Informatika × didaktika informatiky</title>
+  <style>
+    :root{
+      --blue:#1f3b70;
+      --text:#111827;
+      --muted:#374151;
+      --line:#e5e7eb;
+      --box:#eef2f7;
+      --card:#f9fafb;
+      --border:#e5e7eb;
+    }
+
+    body{
+      margin:0;
+      padding:18px 22px;
+      font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
+      color:var(--text);
+      background:#fff;
+    }
+
+    h2{
+      margin:0 0 8px;
+      font-size:26px;
+      font-weight:800;
+      color:var(--blue);
+      letter-spacing:-0.2px;
+    }
+
+    hr{
+      border:none;
+      border-top:2px solid var(--line);
+      margin:8px 0 18px;
+    }
+
+    p{
+      margin:0 0 14px;
+      line-height:1.65;
+      font-size:15.5px;
+      color:var(--muted);
+    }
+    p strong{ color:var(--text); }
+
+    h3{
+      margin:18px 0 10px;
+      font-size:18px;
+      font-weight:800;
+      color:var(--text);
+    }
+
+    .grid{
+      display:grid;
+      grid-template-columns:repeat(2, minmax(0, 1fr));
+      gap:14px;
+      margin: 10px 0 16px;
+    }
+    @media (max-width: 820px){
+      .grid{ grid-template-columns:1fr; }
+    }
+
+    .card{
+      background:var(--card);
+      border:1px solid var(--border);
+      border-radius:12px;
+      padding:14px 16px;
+    }
+    .card h4{
+      margin:0 0 8px;
+      font-size:16px;
+      color:var(--text);
+      font-weight:800;
+    }
+    .card ul{
+      margin:0;
+      padding-left:18px;
+      color:var(--muted);
+      line-height:1.7;
+      font-size:15.5px;
+    }
+
+    .info-box{
+      background:var(--box);
+      border-left:6px solid var(--blue);
+      border-radius:10px;
+      padding:14px 16px 14px 18px;
+      margin:14px 0 16px;
+    }
+    .info-box strong{
+      display:block;
+      margin-bottom:8px;
+      color:var(--text);
+      font-size:15.5px;
+    }
+
+    .mini{
+      font-size:14.5px;
+      color:var(--muted);
+      margin-top:8px;
+    }
+
+    .tag{
+      display:inline-block;
+      background:#e5f1ff;
+      color:var(--blue);
+      border-radius:999px;
+      padding:3px 10px;
+      font-size:12.5px;
+      font-weight:700;
+      margin-right:6px;
+      margin-bottom:6px;
+    }
+
+    ol{
+      margin:0;
+      padding-left:20px;
+      color:var(--muted);
+      line-height:1.7;
+      font-size:15.5px;
+    }
+
+    .callout{
+      border:1px dashed #c7d2fe;
+      background:#f8fafc;
+      border-radius:12px;
+      padding:12px 14px;
+      margin: 10px 0 0;
+      color:var(--muted);
+      font-size:15.5px;
+      line-height:1.65;
+    }
+    .callout strong{ color:var(--text); }
+  </style>
+</head>
+
+<body>
+  <h2>Informatika × didaktika informatiky</h2>
+  <hr>
+
+  <p>
+    Aby mohla vzniknout kvalitní školní výuka informatiky, musí se propojit dva „světy“:
+    <strong>informatika jako vědní obor</strong> (co je pravdivé, přesné a odborně správné)
+    a <strong>didaktika informatiky jako vědní disciplína</strong> (jak to naučit konkrétní žáky).
+    Právě zde probíhá <strong>didaktická transformace obsahu</strong>.
+  </p>
+
+  <div>
+    <span class="tag">vědní obor</span>
+    <span class="tag">vědní disciplína</span>
+    <span class="tag">didaktická transformace</span>
+  </div>
+
+  <div class="grid">
+    <div class="card">
+      <h4>Informatika (vědní obor)</h4>
+      <ul>
+        <li>zabývá se <strong>principy zpracování informací</strong>, algoritmy, daty, systémy a sítěmi,</li>
+        <li>řeší „<strong>jak to funguje</strong>“ a „<strong>jak to navrhnout</strong>“ (modely, důkazy, efektivita),</li>
+        <li>výstupem jsou např. teorie, metody, algoritmy, softwarové postupy, standardy.</li>
+      </ul>
+      <p class="mini">
+        Příklad: formální definice algoritmu, složitost O(n), kryptografie, datové struktury.
+      </p>
+    </div>
+
+    <div class="card">
+      <h4>Didaktika informatiky (vědní disciplína)</h4>
+      <ul>
+        <li>zkoumá „<strong>jak informatiku učit</strong>“ a jaké cíle a učivo volit,</li>
+        <li>zohledňuje žáka: věk, zkušenost, motivaci, tempo, SVP i nadání,</li>
+        <li>řeší metody, úlohy, pomůcky, hodnocení, typické miskoncepce.</li>
+      </ul>
+      <p class="mini">
+        Příklad: jak učit algoritmizaci v 5. třídě pomocí unplugged a blokového programování.
+      </p>
+    </div>
+  </div>
+
+  <h3>Co znamená „vztah“ mezi nimi?</h3>
+  <p>
+    Vztah mezi informatikou a didaktikou informatiky není „nadřazený–podřazený“, ale
+    <strong>funkční</strong>. Informatika poskytuje odborný obsah, didaktika informatiky
+    rozhoduje, <strong>jak tento obsah převést</strong> do podoby učiva, aby měl vzdělávací smysl
+    a byl zvládnutelný pro konkrétní žáky.
+  </p>
+
+  <div class="info-box">
+    <strong>Didaktická transformace jako most:</strong>
+    <ol>
+      <li><strong>Výběr</strong> (co z informatiky je pro školu podstatné a proč).</li>
+      <li><strong>Uspořádání</strong> (v jakém pořadí a návaznosti to dávat).</li>
+      <li><strong>Zjednodušení a reprezentace</strong> (modely, analogie, vizualizace).</li>
+      <li><strong>Přizpůsobení žákům</strong> (psycho-didaktické hledisko, SVP, nadání).</li>
+      <li><strong>Ověření porozumění</strong> (úlohy, zpětná vazba, hodnocení).</li>
+    </ol>
+  </div>
+
+  <h3>Ukázkový příklad transformace (algoritmus)</h3>
+  <p>
+    Odborný pojem <strong>algoritmus</strong> může mít v informatice formální definici a souvisí se složitostí,
+    korektností a optimalizací. Ve škole se ale často transformuje do podoby:
+    „<strong>postup / návod</strong> pro řešení problému krok za krokem“.
+  </p>
+
+  <div class="callout">
+    <strong>Jak to učitel může podat v praxi:</strong><br>
+    Žáci vytvoří „program“ pro spolužáka–robota (unplugged), následně totéž vyzkouší v prostředí
+    Scratch/MakeCode (bloky). U žáků se <strong>SVP</strong> lze využít více názorných kroků,
+    kratší úlohy a častější kontrolu. U <strong>nadaných</strong> lze doplnit podmínky, cykly,
+    optimalizaci nebo více řešení téhož problému.
+  </div>
+
+  <h3>Proč je to důležité dnes?</h3>
+  <p>
+    Současná kurikulární změna (revize RVP) posouvá informatiku směrem k informatickému myšlení,
+    práci s daty a algoritmizaci. To klade větší nároky na didaktiku informatiky: nestačí „učit ovládat
+    programy“, ale je potřeba cíleně rozvíjet <strong>porozumění principům</strong> a učivo vhodně transformovat.
+  </p>
+</body>
+</html>

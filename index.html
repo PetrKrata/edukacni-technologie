@@ -1,16 +1,50 @@
 <!DOCTYPE html>
 <html lang="cs">
 <head>
-    <meta charset="UTF-8">
-    <title>Edukační technologie</title>
+<meta charset="UTF-8">
+<title>Didaktická transformace obsahu</title>
+<style>
+  body { margin:0; font-family:system-ui; background:#f5f5f7; }
+  header { background:#1f3b70; color:white; padding:1rem; }
+  nav { background:#263c63; padding:.5rem; }
+  nav a {
+    color:#dde6ff;
+    margin-right:.5rem;
+    text-decoration:none;
+    padding:.4rem .7rem;
+    border-radius:20px;
+  }
+  nav a:hover { background:rgba(255,255,255,.15); }
+  main { padding:1rem; }
+  iframe {
+    width:100%;
+    height:80vh;
+    border:none;
+    background:white;
+    border-radius:12px;
+  }
+</style>
 </head>
+
 <body>
+<header>
+  <h1>Didaktická transformace obsahu v informatice</h1>
+</header>
 
-<h1>Edukační technologie</h1>
+<nav>
+  <a href="pages/uvod.html" target="content">Úvod</a>
+  <a href="pages/vztah.html" target="content">Informatika × didaktika</a>
+  <a href="pages/onto.html" target="content">Onto-didaktická</a>
+  <a href="pages/psycho.html" target="content">Psycho-didaktická</a>
+  <a href="pages/kognitivni.html" target="content">Kognitivní</a>
+  <a href="pages/revize.html" target="content">Revize RVP</a>
+  <a href="pages/praxe.html" target="content">Praxe</a>
+  <a href="pages/kviz.html" target="content">Kvíz</a>
+  <a href="pages/zdroje.html" target="content">Zdroje</a>
+</nav>
 
-<p>
-Studijní materiál vytvořený v rámci předmětu Edukační technologie.
-</p>
-
+<main>
+  <iframe name="content" src="pages/uvod.html"></iframe>
+</main>
 </body>
 </html>

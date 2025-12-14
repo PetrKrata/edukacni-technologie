@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Onto-didaktická transformace obsahu</title>
+  <style>
+    :root{
+      --blue:#1f3b70;
+      --text:#111827;
+      --muted:#374151;
+      --line:#e5e7eb;
+      --box:#eef2f7;
+      --card:#f9fafb;
+      --border:#e5e7eb;
+    }
+
+    body{
+      margin:0;
+      padding:18px 22px;
+      font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
+      color:var(--text);
+      background:#fff;
+    }
+
+    h2{
+      margin:0 0 8px;
+      font-size:26px;
+      font-weight:800;
+      color:var(--blue);
+      letter-spacing:-0.2px;
+    }
+
+    hr{
+      border:none;
+      border-top:2px solid var(--line);
+      margin:8px 0 18px;
+    }
+
+    p{
+      margin:0 0 14px;
+      line-height:1.65;
+      font-size:15.5px;
+      color:var(--muted);
+    }
+    p strong{ color:var(--text); }
+
+    h3{
+      margin:18px 0 10px;
+      font-size:18px;
+      font-weight:800;
+      color:var(--text);
+    }
+
+    .tag{
+      display:inline-block;
+      background:#e5f1ff;
+      color:var(--blue);
+      border-radius:999px;
+      padding:3px 10px;
+      font-size:12.5px;
+      font-weight:700;
+      margin-right:6px;
+      margin-bottom:6px;
+    }
+
+    .info-box{
+      background:var(--box);
+      border-left:6px solid var(--blue);
+      border-radius:10px;
+      padding:14px 16px 14px 18px;
+      margin:14px 0 16px;
+    }
+    .info-box strong{
+      display:block;
+      margin-bottom:8px;
+      color:var(--text);
+      font-size:15.5px;
+    }
+
+    .grid{
+      display:grid;
+      grid-template-columns:repeat(2, minmax(0, 1fr));
+      gap:14px;
+      margin: 10px 0 16px;
+    }
+    @media (max-width: 820px){
+      .grid{ grid-template-columns:1fr; }
+    }
+
+    .card{
+      background:var(--card);
+      border:1px solid var(--border);
+      border-radius:12px;
+      padding:14px 16px;
+    }
+    .card h4{
+      margin:0 0 8px;
+      font-size:16px;
+      color:var(--text);
+      font-weight:800;
+    }
+
+    ul, ol{
+      margin:0;
+      padding-left:20px;
+      color:var(--muted);
+      line-height:1.7;
+      font-size:15.5px;
+    }
+
+    .callout{
+      border:1px dashed #c7d2fe;
+      background:#f8fafc;
+      border-radius:12px;
+      padding:12px 14px;
+      margin: 10px 0 0;
+      color:var(--muted);
+      font-size:15.5px;
+      line-height:1.65;
+    }
+    .callout strong{ color:var(--text); }
+
+    .mini{
+      font-size:14.5px;
+      color:var(--muted);
+      margin-top:8px;
+    }
+  </style>
+</head>
+
+<body>
+  <h2>Onto-didaktická transformace obsahu</h2>
+  <hr>
+
+  <p>
+    <strong>Onto-didaktická transformace</strong> popisuje, jak se odborný (vědní) obsah
+    převádí do podoby <strong>kurikulárního obsahu</strong> – tedy co se má učit ve škole a jak
+    je to vyjádřeno v kurikulárních dokumentech. Jde o „první velký filtr“:
+    <strong>co z oboru se vůbec dostane do školy</strong>.
+  </p>
+
+  <div>
+    <span class="tag">obsah → kurikulum</span>
+    <span class="tag">RVP / ŠVP</span>
+    <span class="tag">kurikulární dokumenty</span>
+  </div>
+
+  <h3>Základní pojmy</h3>
+
+  <div class="grid">
+    <div class="card">
+      <h4>Kurikulum</h4>
+      <p class="mini">
+        Kurikulum je plánovaný a organizovaný obsah vzdělávání (co, proč, kdy a v jaké návaznosti se učí).
+        Zahrnuje cíle, témata/učivo, očekávané výstupy i doporučené přístupy.
+      </p>
+    </div>
+
+    <div class="card">
+      <h4>Kurikulární obsah</h4>
+      <p class="mini">
+        Kurikulární obsah je to, co se z oboru „vybere“ pro školu a jak je to strukturováno
+        (např. tematické celky, očekávané výstupy, kompetence).
+      </p>
+    </div>
+  </div>
+
+  <div class="grid">
+    <div class="card">
+      <h4>Kurikulární dokumenty</h4>
+      <ul>
+        <li><strong>RVP</strong> (Rámcový vzdělávací program) – státní kurikulární dokument.</li>
+        <li><strong>ŠVP</strong> (Školní vzdělávací program) – školní konkretizace RVP.</li>
+        <li>učební osnovy, tematické plány, školní materiály.</li>
+      </ul>
+      <p class="mini">
+        Právě v těchto dokumentech se „ukotví“, co má žák na konci umět.
+      </p>
+    </div>
+
+    <div class="card">
+      <h4>Proč „onto-“?</h4>
+      <p class="mini">
+        „Onto“ odkazuje na povahu a strukturu poznatků daného oboru – co je pro informatiku typické
+        (algoritmy, data, systémy, reprezentace informací) a co je pro školu smysluplné vybrat.
+      </p>
+    </div>
+  </div>
+
+  <h3>Jakonto-didaktická transformace typicky probíhá</h3>
+  <div class="info-box">
+    <strong>Jednoduchý model procesu (od oboru ke škole):</strong>
+    <ol>
+      <li><strong>Vědní obsah</strong> (akademická informatika: pojmy, teorie, postupy).</li>
+      <li><strong>Výběr a redukce</strong> (co je pro školu podstatné a věkově přiměřené).</li>
+      <li><strong>Strukturování</strong> (v jaké návaznosti a hloubce se témata objeví).</li>
+      <li><strong>Zakotvení v kurikulu</strong> (RVP → ŠVP → tematické plány).</li>
+      <li><strong>Učivo a materiály</strong> (učebnice, úlohy, projekty, hodnocení).</li>
+    </ol>
+  </div>
+
+  <h3>Příklad z praxe: „Informatika v RVP ZV“</h3>
+  <p>
+    V české školní praxi je dobrým příkladem onto-didaktické transformace posun od „ICT dovedností“
+    k důrazu na <strong>informatické myšlení</strong>. Do kurikula se tak dostávají témata jako
+    <strong>algoritmizace a programování</strong>, <strong>data a informace</strong>,
+    <strong>informační systémy</strong> nebo <strong>digitální technologie</strong>.
+    Škola je pak konkretizuje v ŠVP a tematických plánech (např. Scratch / Micro:bit / unplugged).
+  </p>
+
+  <div class="callout">
+    <strong>Konkrétní školní situace (ZŠ, 6.–7. ročník):</strong><br>
+    ŠVP stanoví očekávaný výstup typu „žák navrhne a ověří postup řešení úlohy“.
+    Učitel to převede do série úloh: nejdřív unplugged (příkazy robota), potom blokové programování,
+    následně projekt (např. jednoduchá hra v Scratch).<br><br>
+    <strong>Žáci se SVP:</strong> kratší a jasně strukturované kroky, vizualizace, více opakování, podpůrné technologie,
+    možnost alternativního výstupu.<br>
+    <strong>Nadaní žáci:</strong> rozšíření o podmínky/cykly, více variant řešení, optimalizace, vlastní projekt navíc.
+  </div>
+
+  <h3>Na co si dát pozor</h3>
+  <ul>
+    <li><strong>Přílišná redukce</strong> – hrozí, že z informatiky zůstane jen „klikání v aplikacích“.</li>
+    <li><strong>Přílišná abstrakce</strong> – učivo může být pro žáky nezvládnutelné bez vhodné psycho-didaktické úpravy.</li>
+    <li><strong>Návaznost</strong> – témata musí dávat smysl v čase (od konkrétního k abstraktnímu).</li>
+  </ul>
+
+  <p class="mini" style="margin-top:14px;">
+    Poznámka: Na onto-didaktickou transformaci navazuje psycho-didaktická transformace – tedy jak
+    vybraný kurikulární obsah přizpůsobit konkrétním žákům a výuce.
+  </p>
+</body>
+</html>
